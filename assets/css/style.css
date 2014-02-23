@@ -1,0 +1,694 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	border:0;
+}
+
+img {
+	vertical-align: top;
+}
+
+html { 
+
+	font-size: 100%; 
+	-webkit-text-size-adjust: 100%; 
+	-ms-text-size-adjust: 100%; 
+}
+
+body {
+	font-family: Arial;
+	font-size: 12px;
+	color:#000;
+	background: #fbfbfb;
+	overflow-x: hidden;
+}
+
+a { 
+	color: #353535; 
+	text-decoration: none; 
+}
+
+a:hover {
+	 color: #353535; 
+	 text-decoration:underline; 
+}
+
+li {
+	list-style-type: none;
+}
+
+:focus {
+	outline:none;
+}
+
+@font-face {
+    font-family: 'museo100';
+    src: url('../fonts/museo100-regular-webfont.eot');
+    src: url('../fonts/museo100-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museo100-regular-webfont.woff') format('woff'),
+         url('../fonts/museo100-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'museo300';
+    src: url('../fonts/museo300-regular-webfont.eot');
+    src: url('../fonts/museo300-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museo300-regular-webfont.woff') format('woff'),
+         url('../fonts/museo300-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'museo500';
+    src: url('../fonts/museo500-regular-webfont.eot');
+    src: url('../fonts/museo500-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museo500-regular-webfont.woff') format('woff'),
+         url('../fonts/museo500-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'museo700';
+    src: url('../fonts/museo700-regular-webfont.eot');
+    src: url('../fonts/museo700-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museo700-regular-webfont.woff') format('woff'),
+         url('../fonts/museo700-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'museo900';
+    src: url('../fonts/museo900-regular-webfont.eot');
+    src: url('../fonts/museo900-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museo900-regular-webfont.woff') format('woff'),
+         url('../fonts/museo900-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+header	{
+	float: left;
+	width: 100%;
+	height: 67px;
+	background: url(../img/f_text.png) #2e3031;
+	border-bottom: 2px solid #ff7340;
+}
+
+footer {
+	float: left;
+	width: 100%;
+	height: 70px;
+	background: url(../img/f_text.png) #2e3031;
+	border-top: 1px solid #ff7340;
+	bottom: 0;
+}
+
+.contenedor_header {
+	width: 1280px;
+	margin:0 auto;
+	background: #ccc;
+}
+
+.logo_crabi {
+	float: left;
+	margin-right: 79px;
+}
+
+.buscador_crabi_header {
+	float: right;
+	padding-top: 15px;
+	padding-right: 20px;
+}
+
+.buscador_crabi_header input[type="buscador"] {
+	font-size: 12px;
+	width: 182px;
+	float: left;
+	height: 38px;
+	line-height: 38px;
+	border: none;
+	box-shadow: none;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 10px;
+	border-radius: 0px;
+}
+
+.boton_buscar_header {
+	float: left;
+}
+
+.contenedor_centro_f {
+	float: left;
+	width: 100%;
+}
+
+.contenedor_centro {
+	width: 1280px;
+	margin:0 auto;
+	background: #fff;
+	/*display: flex;*/
+	display: table;
+
+	/* box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.07);
+	-webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.07);
+	-moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.07);
+	-o-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.07); */
+
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+	-o-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.contenedor_footer {
+	width: 1280px;
+	margin: 0 auto;
+}
+
+.logo_footer {
+	float: left;
+	padding-top: 16px;
+	padding-left: 26px;
+}
+
+.subir_top {
+	float: right;
+	margin-top: 16px;
+	margin-right: 21px;
+}
+
+.creditos_crabi {
+	float: left;
+	color: #fff;
+}
+
+.creditos_crabi h3 {
+	font-family: 'museo500';
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 66px;
+	padding-top: 3px;
+	padding-left: 15px;
+}
+
+.navegacion_header {
+	float: left;
+	line-height: 69px;
+}
+
+.navegacion_header li {
+	font-family: 'museo300';
+	font-size: 18px;
+	display: inline;
+	margin-right: 10px;
+
+}
+
+.navegacion_header li a {
+	color: #fff;
+	line-height: 26px;
+	padding: 4px 10px;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+.navegacion_header li a:hover {
+	color: #fff;
+	line-height: 26px;
+	padding: 4px 10px;
+	text-decoration: none;
+}
+
+.bt_nacional:hover {
+	background: #e14d43;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.7);
+}
+
+.bt_internacional:hover {
+	background: #3dbfd9;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8);
+}
+
+.bt_deportes:hover {
+	background: #88c462;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8);
+}
+
+.bt_farandula:hover {
+	background: #ff963a;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
+}
+
+.contenedor_centro div {
+/*	display: block;*/
+}
+
+.contendor_notas_principales {
+	float: left;
+	width: 100%;
+	border-bottom: 5px solid #ff7340;
+	/*margin-bottom: 50px;*/
+}
+
+.destacado_primarios_f {
+	float: left;
+	width: 604px;
+}
+
+.destacado_primarios {
+	float: left;
+	overflow: hidden;
+	max-width: 599px;
+	border-right: 5px solid #ff7340;
+
+}
+
+.destacado_secundarios_f {
+	float: left;
+	width: 415px;
+}
+
+.destacado_secundarios {
+	float: left;
+	max-width: 415px;
+}
+
+.destacado_secundarios_bor {
+	border-bottom: 5px solid #ff7340;
+}
+
+.destacados_terciarios_f {
+	float: left;
+	width: 256px;
+	border-left: 2px solid #ff7340;
+	border-right: 2px solid #ff7340;
+}
+
+.destacados_terciarios {
+	float: left;
+	width: 256px;
+	border-bottom: 2px solid #ff7340;
+}
+
+.tit_destacado {
+	float: left;
+	background: url(../img/bg_destacdos.png);
+	position: absolute;
+	height: 81px;
+	margin: 251px 0 0 0;
+	width: 569px;
+	z-index: 5;
+	padding: 0 0 0 30px;
+}
+
+.tit_destacado h1 {
+	float: left;
+	width: 83%;
+	padding: 14px 0 0 0;
+}
+
+.tit_destacado h1 a {
+	font-family: 'museo500';
+	font-size: 25px;
+	font-weight: normal;
+	color: #fff;
+	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+	
+}
+
+.tit_destacado_icon {
+	float: right;
+}
+
+.tit_destacado_sec {
+	float: left;
+	background: url(../img/bg_destacdos.png);
+	position: absolute;
+	height: 65px;
+	margin: 119px 0 0 0;
+	width: 385px;
+	z-index: 5;
+	padding: 0 0 0 30px;
+}
+
+.tit_destacado_sec h1 {
+	float: left;
+	width: 81%;
+	padding: 14px 0 0 0;
+}
+
+.tit_destacado_sec h1 a {
+	font-family: 'museo500';
+	font-size: 18px;
+	font-weight: normal;
+	color: #fff;
+	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+	
+}
+
+.tit_destacado_ter {
+	float: left;
+	background: url(../img/bg_destacdos.png);
+	position: absolute;
+	height: 40px;
+	margin: 51px 0 0 0;
+	width: 245px;
+	z-index: 5;
+	padding: 0 0 0 11px;
+}
+
+.tit_destacado_ter h1 {
+	float: left;
+	width: 80%;
+	padding: 6px 0 0 0;
+}
+
+.tit_destacado_ter h1 a {
+	font-family: 'museo500';
+	font-size: 13px;
+	font-weight: normal;
+	color: #fff;
+	text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+	
+}
+	
+.centro_izq {
+	float: left;
+	width: 367px;
+	border-left: 1px solid #dedede;
+	border-right: 1px solid #dedede;
+}
+
+.centro_der {
+	float: left;
+	width: 865px;
+	padding: 25px 20px 50px 24px;
+}
+
+.contenedor_seccion {
+	float: left;
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+.titulo_seccion_f {
+	float: left;
+	width: 100%;
+}
+
+.contenedor_titulo_sec {
+	float: left;
+}
+
+.titulo_sec {
+	float: left;
+	font-family: 'museo500';
+	font-size: 21px;
+
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+.titulo_sec:hover {
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.titulo_sec a {
+	position: relative;
+	padding: 0 12px;
+	color: #fff;
+	display: inline;
+	top: 9px;
+}
+
+.titulo_sec a:hover {
+	text-decoration: none;
+}
+
+.titulo_sec_icon {
+	float: right;
+	width: 40px;
+	height: 40px;
+	background: url(../img/flecha_seccion.png) center center no-repeat;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.contenedor_cajas_seccion {
+	float:left;
+	width: 100%;
+	padding: 20px 0 26px 0;
+}
+
+.contenedor_seccion_item {
+	float: left;
+	width: 140px;
+	margin-right: 41px;
+}
+
+.contenedor_seccion_item:last-child {
+	margin-right: 0;	
+}
+
+.contenedor_seccion_item_img {
+	float: left;
+	width: 140px;
+	height: 105px;
+	overflow: hidden;
+}
+
+.contenedor_seccion_item_img a img
+{
+	width: 100%;
+	height: auto;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+
+.contenedor_seccion_item_img:hover a img
+{
+	transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+}
+
+.contenedor_icon_social_sec {
+	position: absolute;
+	z-index: 5;
+	margin: 75px 0 0 110px;
+}
+
+.contenedor_seccion_item h4 {
+	float: left;
+	width: 100%;
+	font-size: 13px;
+	font-weight: normal;
+	padding: 11px 0 0 0;
+	line-height: 18px;
+}
+
+.contenedor_seccion_item h4 a {
+	color: #444;
+}
+
+/* NACIONAL COLOR */
+.color_seccion_nacional {
+	background: #e14d43;
+}
+
+.borde_seccion_item_img {
+	border-bottom: 5px solid #d1d1d1;
+	transition: all 1s ease 0s;
+}
+
+.borde_seccion_item_img:hover {
+	border-color: #e14d43;
+}
+
+.borde_seccion_nacional {
+	border-bottom: 2px solid rgba(255, 77, 67, 0.7);
+}
+
+.borde_seccion_titulo_nacional {
+	border-bottom: 1px solid #ca453c;
+}
+
+/* INTERNACIONAL COLOR */
+.color_seccion_internacional {
+	background: #3dbfd9;
+}
+
+.borde_seccion_item_img_internacional {
+	border-bottom: 5px solid #d1d1d1;
+	transition: all 1s ease 0s;
+}
+
+.borde_seccion_item_img_internacional:hover {
+	border-color: #3dbfd9;
+}
+
+.borde_seccion_internacional {
+	border-bottom: 2px solid rgba(61, 191, 217, 0.7);
+}
+
+.borde_seccion_titulo_internacional {
+	border-bottom: 1px solid #36abc2;
+}
+
+/* DEPORTES COLOR */
+.color_seccion_deportes {
+	background: #88c462;
+}
+
+.borde_seccion_item_img_deportes {
+	border-bottom: 5px solid #d1d1d1;
+	transition: all 1s ease 0s;
+}
+
+.borde_seccion_item_img_deportes:hover {
+	border-color: #88c462;
+}
+
+.borde_seccion_deportes {
+	border-bottom: 2px solid rgba(136, 196, 98, 0.7);
+}
+
+.borde_seccion_titulo_deportes {
+	border-bottom: 1px solid #7ab058;
+}
+
+/* FARANDULA COLOR */
+.color_seccion_farandula {
+	background: #ff963a;
+}
+
+.borde_seccion_item_img_farandula {
+	border-bottom: 5px solid #d1d1d1;
+	transition: all 1s ease 0s;
+}
+
+.borde_seccion_item_img_farandula:hover {
+	border-color: #ff963a;
+}
+
+.borde_seccion_farandula {
+	border-bottom: 2px solid rgba(255, 150, 58, 0.7);
+}
+
+.borde_seccion_titulo_farandula {
+	border-bottom: 1px solid #e58634;
+}
+
+.contenedor_ranking_lectoria {
+	float: left;
+	width: 327px;
+	background: #f0f0f0;
+	border-bottom: 5px solid #3c443d;
+	padding: 38px 20px 37px 20px;
+	
+}
+
+.contenedor_ranking_lectoria h3 {
+	font-family: 'museo700';
+	width: 100%;
+	font-size: 20px;
+	color: #343434;
+	margin-bottom: 12px;
+}
+
+.linea_separacion_ranking {
+	float: left;
+	width: 100%;
+	height: 5px;
+	background: #a0a0a0;
+	margin-bottom: 10px;
+}
+
+.linea_sep_color {
+	float: right;
+	width: 80px;
+	height: 5px;
+	background: #3c443d;
+}
+
+.contenedor_articulos_ranking {
+	float: left;
+	width: 100%;
+	padding-top: 16px;
+	border-bottom: 1px solid #dedede;
+	box-shadow: 0 2px 0px #fff;
+}
+
+.contenedor_articulos_ranking a {
+	font-size: 13px;
+	font-weight: bold;
+	color: #555;
+	line-height: 17px;
+}
+
+.contenedor_ranking_img {
+	float: left;
+	width: 91px;
+	margin-right: 15px;
+}
+
+.orden_ranking {
+	float: left;
+	width: 29px;
+	height: 35px;
+	background: #28aae8;
+	border-right: 1px solid #fff;
+	text-align: center;
+	font-family: 'museo700';
+	font-size: 20px;
+	color: #fff;
+	padding-top: 12px; 
+}
+
+.ranking_img {
+	float: left;
+}
+
+.contenedor_social_ranking {
+	float: left;
+	width: 100%;
+	text-align: right;
+}
+
+.contenido_txt_ranking {
+	float: left;
+	width: 67%;
+}
+
+.tiempo_ranking {
+	float: left;
+	padding-top: 1px;
+	width: 100%;
+	color: #ae9999;
+}

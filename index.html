@@ -1,0 +1,82 @@
+<!doctype html>
+<html ng-app="app" id="ng-app">
+<head>
+
+	<!--[if lte IE 8]>
+	<script>
+		document.createElement('ng-include');
+		document.createElement('ng-pluralize');
+		document.createElement('ng-view');
+
+		// Optionally these for CSS
+		document.createElement('ng:include');
+		document.createElement('ng:pluralize');
+		document.createElement('ng:view');
+	</script>
+    <![endif]-->
+
+	<!-- // Metadata -->
+	<title>Crabi.la</title>
+	<meta charset="utf-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- // CSS styles -->
+	<link rel="stylesheet" href="/assets/css/style.css"/>	
+	<link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+
+	<!-- // JS scripts -->    
+	<script src="/assets/js/angular.min.js"></script>
+	<script src="/assets/js/angular-route.min.js"></script>	
+	<script src="app.js"></script>	
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="/assets/js/functions.js"></script>
+
+</head>
+<body>	
+
+	<header>
+		<div class="contenedor_header">
+			<div class="logo_crabi">
+				<a href="#"><img src="/assets/img/logo_crabi.png"></a>
+			</div>
+			<nav class="navegacion_header">
+				<ul>
+					<li><a href="#" class="bt_nacional">Nacional</a></li>
+					<li><a href="#" class="bt_internacional">Internacional</a></li>
+					<li><a href="#" class="bt_deportes">Deportes</a></li>
+					<li><a href="#" class="bt_farandula">Farándula</a></li>
+				</ul>
+			</nav>
+			<div class="buscador_crabi_header">
+				<input type="buscador" name="s" placeholder="Buscar...">
+				<div class="boton_buscar_header">
+					<img src="/assets/img/bt_buscar_header.jpg">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="contenedor_centro_f">
+		
+		<section class="contenedor_centro" ng-view>
+		</section>
+
+	</section>
+
+	<footer>
+		<div class="contenedor_footer">
+			<div class="logo_footer">
+				<a href="#"><img src="/assets/img/logo_crabi_f.png"></a>
+			</div>
+			<div class="creditos_crabi">
+				<h3>© 2013 - 2014  Crabi.la - Todos los derechos reservados</h3>
+			</div>
+			<div class="subir_top">
+				<a href="#"><img src="/assets/img/subir.jpg">
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
