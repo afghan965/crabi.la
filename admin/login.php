@@ -4,9 +4,9 @@ if(isset($_COOKIE['login'])) {
     header("Location: /");
 }
 ?>
-<?php include 'inc/config.php'; ?>
-<?php include 'inc/template_start.php'; ?>
-<?php include 'inc/database_connector.php'; ?>
+<?php include dirname(__FILE__) . 'inc/config.php'; ?>
+<?php include dirname(__FILE__) . 'inc/template_start.php'; ?>
+<?php include dirname(__FILE__) . 'inc/database_connector.php'; ?>
 
 <?php
 $login_error = false;
@@ -77,8 +77,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 </div>
 <!-- END Login Container -->
 
-<?php include 'inc/template_scripts.php'; ?>
-<?php include 'inc/template_end.php'; ?>
+<?php include dirname(__FILE__) . 'inc/template_scripts.php'; ?>
+<?php include dirname(__FILE__) . 'inc/template_end.php'; ?>
 
 <?php
 if($login_error) {
