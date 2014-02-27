@@ -62,7 +62,7 @@
                 <div class="sidebar-section sidebar-user clearfix">
                     <div class="sidebar-user-avatar">
                         <a href="page_ready_user_profile.php">
-                            <img src="<?=$_COOKIE['avatar']?>" alt="avatar">
+                            <img src="http://crabi.la/admin/<?=$_COOKIE['avatar']?>" alt="avatar">
                         </a>
                     </div>
                     <div class="sidebar-user-name"><?=$_COOKIE['username']?></div>

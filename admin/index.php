@@ -19,10 +19,10 @@
 
 <!-- Google Maps API + Gmaps Plugin, must be loaded in the page you would like to use maps (Remove 'http:' if you have SSL) -->
 <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-<script src="/js/helpers/gmaps.min.js"></script>
+<script src="http://crabi.la/admin/js/helpers/gmaps.min.js"></script>
 
 <!-- Load and execute javascript code used only in this page -->
-<script src="/js/pages/index.js"></script>
+<script src="http://crabi.la/admin/js/pages/index.js"></script>
 <script>$(function(){ Index.init(); });</script>
 
 <?php include dirname(__FILE__) . '/inc/template_end.php'; ?>
