@@ -4,9 +4,9 @@ if(isset($_COOKIE['login'])) {
     header("Location: /");
 }
 ?>
-<?php include dirname(__FILE__) . 'inc/config.php'; ?>
-<?php include dirname(__FILE__) . 'inc/template_start.php'; ?>
-<?php include dirname(__FILE__) . 'inc/database_connector.php'; ?>
+<?php include dirname(__FILE__) . '/inc/config.php'; ?>
+<?php include dirname(__FILE__) . '/inc/template_start.php'; ?>
+<?php include dirname(__FILE__) . '/inc/database_connector.php'; ?>
 
 <?php
 $login_error = false;
@@ -33,7 +33,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 <!-- Login Background -->
 <div id="login-background">
     <!-- For best results use an image with a resolution of 2560x400 pixels (prefer a blurred image for smaller file size) -->
-    <img src="img/placeholders/headers/login_header.png" alt="Login Background" class="animation-pulseSlow">
+    <img src="/img/placeholders/headers/login_header.png" alt="Login Background" class="animation-pulseSlow">
 </div>
 <!-- END Login Background -->
 
@@ -77,8 +77,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 </div>
 <!-- END Login Container -->
 
-<?php include dirname(__FILE__) . 'inc/template_scripts.php'; ?>
-<?php include dirname(__FILE__) . 'inc/template_end.php'; ?>
+<?php include dirname(__FILE__) . '/inc/template_scripts.php'; ?>
+<?php include dirname(__FILE__) . '/inc/template_end.php'; ?>
 
 <?php
 if($login_error) {
