@@ -34,6 +34,18 @@ if($cat == 'posts') {
 			include 'mods/social/resume.php';
 			break;
 	}
+} elseif($cat == 'user') {
+	switch($act) {
+		case 'profile':
+			include 'mods/user/profile.php';
+			break;
+		case 'inbox':
+			include 'mods/user/inbox.php';
+			break;
+		default:
+			include 'mods/user/profile.php';
+			break;
+	}
 } else {
 	include 'mods/pages/home.php';
 }
