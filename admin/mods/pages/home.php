@@ -8,7 +8,6 @@
                 <h1>Bienvenido <strong><?=$_COOKIE['username']?></strong><br><small>Te vez pulento! (aún le falta al dashboard xD)</small></h1>
             </div>
             <!-- END Main Title -->
-
         </div>
     </div>
 </div>

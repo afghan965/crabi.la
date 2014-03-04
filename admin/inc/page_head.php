@@ -61,17 +61,17 @@
                 <!-- User Info -->
                 <div class="sidebar-section sidebar-user clearfix">
                     <div class="sidebar-user-avatar">
-                        <a href="page_ready_user_profile.php">
-                            <img src="<?=$_COOKIE['avatar']?>" alt="avatar">
+                        <a href="/user/profile">
+                            <img src="http://crabi.la/admin/<?=$_COOKIE['avatar']?>" alt="avatar">
                         </a>
                     </div>
                     <div class="sidebar-user-name"><?=$_COOKIE['username']?></div>
                     <div class="sidebar-user-links">
-                        <a href="page_ready_user_profile.php" data-toggle="tooltip" data-placement="bottom" title="Profile"><i class="gi gi-user"></i></a>
-                        <a href="page_ready_inbox.php" data-toggle="tooltip" data-placement="bottom" title="Messages"><i class="gi gi-envelope"></i></a>
+                        <a href="/user/profile" data-toggle="tooltip" data-placement="bottom" title="Profile"><i class="gi gi-user"></i></a>
+                        <a href="/user/inbox" data-toggle="tooltip" data-placement="bottom" title="Messages"><i class="gi gi-envelope"></i></a>
                         <!-- Opens the user settings modal that can be found at the bottom of each page (page_footer.php in PHP version) -->
                         <a href="#modal-user-settings" data-toggle="modal" class="enable-tooltip" data-placement="bottom" title="Settings"><i class="gi gi-cogwheel"></i></a>
-                        <a href="login.php" data-toggle="tooltip" data-placement="bottom" title="Logout"><i class="gi gi-exit"></i></a>
+                        <a href="/logout.php" data-toggle="tooltip" data-placement="bottom" title="Logout"><i class="gi gi-exit"></i></a>
                     </div>
                 </div>
                 <!-- END User Info -->

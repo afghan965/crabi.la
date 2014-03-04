@@ -102,7 +102,7 @@ $primary_nav = array(
 
 $database = array(
         'user' => 'root',
-        'pass' => 'root',
+        'pass' => 'donpipowinner',
         'dbname' => 'crabi',
         'host' => 'localhost'
     );

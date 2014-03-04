@@ -24,31 +24,31 @@
 
         <!-- Icons -->
         <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
-        <link rel="shortcut icon" href="/img/favicon.ico">
-        <link rel="apple-touch-icon" href="/img/icon57.png" sizes="57x57">
-        <link rel="apple-touch-icon" href="/img/icon72.png" sizes="72x72">
-        <link rel="apple-touch-icon" href="/img/icon76.png" sizes="76x76">
-        <link rel="apple-touch-icon" href="/img/icon114.png" sizes="114x114">
-        <link rel="apple-touch-icon" href="/img/icon120.png" sizes="120x120">
-        <link rel="apple-touch-icon" href="/img/icon144.png" sizes="144x144">
-        <link rel="apple-touch-icon" href="/img/icon152.png" sizes="152x152">
+        <link rel="shortcut icon" href="http://crabi.la/admin/img/favicon.ico">
+        <link rel="apple-touch-icon" href="http://crabi.la/admin/img/icon57.png" sizes="57x57">
+        <link rel="apple-touch-icon" href="http://crabi.la/admin/img/icon72.png" sizes="72x72">
+        <link rel="apple-touch-icon" href="http://crabi.la/admin/img/icon76.png" sizes="76x76">
+        <link rel="apple-touch-icon" href="http://crabi.la/admin/img/icon114.png" sizes="114x114">
+        <link rel="apple-touch-icon" href="http://crabi.la/admin/img/icon120.png" sizes="120x120">
+        <link rel="apple-touch-icon" href="http://crabi.la/admin/img/icon144.png" sizes="144x144">
+        <link rel="apple-touch-icon" href="http://crabi.la/admin/img/icon152.png" sizes="152x152">
         <!-- END Icons -->
 
         <!-- Stylesheets -->
         <!-- Bootstrap is included in its original form, unaltered -->
-        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://crabi.la/admin/css/bootstrap.min.css">
 
         <!-- Related styles of various icon packs and plugins -->
-        <link rel="stylesheet" href="/css/plugins.css">
+        <link rel="stylesheet" href="http://crabi.la/admin/css/plugins.css">
 
         <!-- The main stylesheet of this template. All Bootstrap overwrites are defined in here -->
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="http://crabi.la/admin/css/main.css">
 
         <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
-        <link rel="stylesheet" href="/css/themes.css">
+        <link rel="stylesheet" href="http://crabi.la/admin/css/themes.css">
         <!-- END Stylesheets -->
 
         <!-- Modernizr (browser feature detection library) & Respond.js (Enable responsive CSS code on browsers that don't support it, eg IE8) -->
-        <script src="/js/vendor/modernizr-2.7.1-respond-1.4.2.min.js"></script>
+        <script src="http://crabi.la/admin/js/vendor/modernizr-2.7.1-respond-1.4.2.min.js"></script>
     </head>
     <body>
