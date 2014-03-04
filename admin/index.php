@@ -22,7 +22,7 @@
 <script src="http://crabi.la/admin/js/helpers/gmaps.min.js"></script>
 
 <!-- Load and execute javascript code used only in this page -->
-<script src="http://crabi.la/admin/js/pages/index.js"></script>
+<script src="<?=$site['base_url']?>/admin/js/pages/index.js"></script>
 <script>$(function(){ Index.init(); });</script>
 
 <?php include dirname(__FILE__) . '/inc/template_end.php'; ?>

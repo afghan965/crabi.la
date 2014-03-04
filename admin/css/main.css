@@ -3422,3 +3422,29 @@ only screen and (min-device-pixel-ratio: 1.5) {
     /* If you used a CSS img background, you can put your high resolution here */
 
 }
+
+/*
+=================================================================
+(#m11forms) FORM NEW
+=================================================================
+*/
+
+::-webkit-input-placeholder {
+   color: #333;
+   font-weight: bold;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #333;  
+   font-weight: bold;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #333;  
+   font-weight: bold;
+}
+
+:-ms-input-placeholder {  
+   color: #333;  
+   font-weight: bold;
+}

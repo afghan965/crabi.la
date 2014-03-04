@@ -101,8 +101,12 @@ $primary_nav = array(
 );
 
 $database = array(
-        'user' => 'root',
-        'pass' => 'donpipowinner',
-        'dbname' => 'crabi',
-        'host' => 'localhost'
-    );
+    'user' => 'root',
+    'pass' => 'root',
+    'dbname' => 'crabi',
+    'host' => 'localhost'
+);
+
+$site = array(
+    'base_url' => 'http://crabi.dev'
+);
