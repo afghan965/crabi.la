@@ -826,12 +826,12 @@ a.sidebar-title:focus {
 }
 
 .header-section h1 i {
-    font-size: 56px;
+    font-size: 46px;
     float: right;
     margin: 2px 0 0 10px;
     color: #eaedf1;
     margin: 0 0 0 10px;
-    line-height: 64px;
+    line-height: 35px;
 }
 
 .header-section {
