@@ -1,9 +1,9 @@
 <?php
 
 require_once dirname(__FILE__) . '/../services/Database/Mysql.php';
-require_once dirname(__FILE__) . '/../entities/RedSocial.php';
+require_once dirname(__FILE__) . '/../entities/Categoria.php';
 
-class RedSocialMapper 
+class CategoriaMapper 
 {
 
 	protected $_mysql;
@@ -17,22 +17,22 @@ class RedSocialMapper
 	{
 		$link = $this->_mysql->connect(); 
 
-		$sql = "SELECT * FROM red_social ORDER BY nombre ASC";
+		$sql = "SELECT * FROM categoria ORDER BY nombre ASC";
 		$res = mysql_query($sql) or die(mysql_error());
 
 		if(mysql_num_rows($res) == 0) {
 			return null;
 		} else {
-			$arrRedSocial = array();
+			$arrCategoria = array();
 			for($i=0; $i<mysql_num_rows($res); $i++) {
-				$redSocial = new RedSocial();
-				$redSocial->setField('id', mysql_result($res, $i, "id"));
-				$redSocial->setField('nombre', mysql_result($res, $i, "nombre"));
-				$arrRedSocial[] = $redSocial;
+				$categoria = new Categoria();
+				$categoria->setField('id', mysql_result($res, $i, "id"));
+				$categoria->setField('nombre', mysql_result($res, $i, "nombre"));
+				$arrCategoria[] = $categoria;
 			}
 		}
 
-		return $arrRedSocial;
+		return $arrCategoria;
 	}
 
 }

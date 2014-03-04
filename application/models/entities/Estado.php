@@ -1,7 +1,7 @@
 <?php
 class Estado {
 
-	private _fields = array(
+	private $_fields = array(
 			"id" => NULL,
 			"nombre" => NULL
 		);

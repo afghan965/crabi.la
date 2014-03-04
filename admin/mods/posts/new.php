@@ -5,6 +5,9 @@ $redSocialMapper = new RedSocialMapper();
 $redesSociales = $redSocialMapper->getAll();
 
 // Obtengo: Categorias
+require_once dirname(__FILE__) . '/../../../application/models/mappers/CategoriaMapper.php';
+$categoriaMapper = new CategoriaMapper();
+$categorias = $categoriaMapper->getAll();
 ?>
 <div class="content-header">
     <div class="header-section">
@@ -72,7 +75,7 @@ $redesSociales = $redSocialMapper->getAll();
 					<h2>Red social</h2>
 				</div>
 				<div class="form-group">
-					<select name="red_social" id="red_social">
+					<select name="red_social" id="red_social" class="select-chosen" data-placeholder="Selecciona">
 						<option value="">Selecciona</option>
 						<? foreach($redesSociales as $rs): ?>
 							<option value="<?=$rs->getField('id')?>"><?=$rs->getField("nombre");?></option>
@@ -88,8 +91,11 @@ $redesSociales = $redSocialMapper->getAll();
 					<h2>Categoría</h2>
 				</div>
 				<div class="form-group">
-					<select name="categoria" id="categoria">
-						<option value="">Selecciona</option>
+					<select id="categoria" name="categoria" class="select-chosen" data-placeholder="Selecciona">  
+						<option value="">Selecciona</option>                      
+						<? foreach($categorias as $c): ?>
+							<option value="<?=$c->getField('id')?>"><?=$c->getField("nombre");?></option>
+						<? endforeach; ?>
 					</select>				
 				</div>
 			</div>
