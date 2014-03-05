@@ -1,5 +1,5 @@
 <?php
-class RedSocial {
+class Noticia {
 
 	private $_fields = array(
 			"id" => NULL,

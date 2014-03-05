@@ -24,7 +24,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 }]);
 
 app.controller('HomeController', function($scope) {
-	console.log("lala1");
+	
 })
 
 app.controller('NoticiaController', function($scope) {
