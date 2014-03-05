@@ -63,12 +63,22 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 	// echo "<pre>"; print_r($noticia); echo "</pre>";
 
 	// Guardo noticia y obtengo ID
-	require_once dirname(__FILE__) . '/../../../application/models/mappers/NoticiaMapper.php';
+	require_once dirname(__FILE__) . '/../../../application/models/mappers/NoticiaMapper.php';	
 	$noticiaMapper = new NoticiaMapper();
 	$noticiaId = $noticiaMapper->save($noticia);
 
-	// Redirect a editar
-	// TODO: Redirect!!
+	// Genero slug y url
+	require_once dirname(__FILE__) . '/../../../application/models/services/String/Slug.php';
+	$slug = Slug::slugify($noticia['titulo']) . "-" . $noticiaId . ".html";
+
+	$categoria = $categoriaMapper->getById($noticia["id_categoria"]);
+	$url = "/" . $categoria->getField("slug") . "/" . $slug;
+
+	if($noticiaMapper->update($noticiaId, array("slug" => $slug, "url" => $url))) {
+		// Redirect a editar
+		// TODO: Redirect!!
+	}
+
 }
 
 ?>

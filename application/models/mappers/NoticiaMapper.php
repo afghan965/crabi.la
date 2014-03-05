@@ -28,6 +28,20 @@ class NoticiaMapper
 		return mysql_insert_id();
 	}
 
+	public function update($id, $data)
+	{
+		if(!is_null($id) && is_array($data) && count($data) > 0) {
+			$link = $this->_mysql->connect();
+			foreach($data as $field => $value) {
+				$sql = "UPDATE noticia SET $field = '$value' WHERE id=$id";
+				$res = mysql_query($sql) or die(mysql_error());			
+			}
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 	public function getDestacadas() 
 	{
 		$link = $this->_mysql->connect(); 

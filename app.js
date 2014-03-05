@@ -8,7 +8,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 		templateUrl: '/application/views/home.html',
 		controller: 'HomeController'		
 
-	}).when('/:id/:slug', {
+	}).when('/:categoria/:slug', {
 
 		templateUrl: '/application/views/noticia.html',
 		controller: 'NoticiaController'	
@@ -23,7 +23,13 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
 }]);
 
-app.controller('HomeController', function($scope) {
+app.controller('HomeController', function($scope, $http) {
+
+	$http.get('/application/scripts/home/destacados.php').success(function(data){
+		$scope.destacado1 = data[1];
+		$scope.destacado2 = data[2];
+		$scope.destacado3 = data[3];
+	})
 	
 })
 
