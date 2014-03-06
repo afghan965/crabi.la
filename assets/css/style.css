@@ -268,15 +268,16 @@ footer {
 
 .destacado_primarios_f {
 	float: left;
-	width: 604px;
+	width: 604px;	
 }
 
 .destacado_primarios {
 	float: left;
 	overflow: hidden;
-	max-width: 599px;
+	width: 599px;
 	border-right: 5px solid #ff7340;
-
+	height: 372px;
+	overflow: hidden;
 }
 
 .destacado_secundarios_f {
@@ -287,6 +288,8 @@ footer {
 .destacado_secundarios {
 	float: left;
 	max-width: 415px;
+	height: 183px;
+	overflow: hidden;
 }
 
 .destacado_secundarios_bor {
@@ -303,7 +306,13 @@ footer {
 .destacados_terciarios {
 	float: left;
 	width: 256px;
+	height: 91px;
+	overflow: hidden;
 	border-bottom: 2px solid #ff7340;
+}
+
+.destacado_container img {
+	width: 100%;
 }
 
 .tit_destacado {
