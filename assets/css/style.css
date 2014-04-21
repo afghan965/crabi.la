@@ -268,15 +268,16 @@ footer {
 
 .destacado_primarios_f {
 	float: left;
-	width: 604px;
+	width: 604px;	
 }
 
 .destacado_primarios {
 	float: left;
 	overflow: hidden;
-	max-width: 599px;
+	width: 599px;
 	border-right: 5px solid #ff7340;
-
+	height: 372px;
+	overflow: hidden;
 }
 
 .destacado_secundarios_f {
@@ -287,6 +288,8 @@ footer {
 .destacado_secundarios {
 	float: left;
 	max-width: 415px;
+	height: 183px;
+	overflow: hidden;
 }
 
 .destacado_secundarios_bor {
@@ -303,7 +306,13 @@ footer {
 .destacados_terciarios {
 	float: left;
 	width: 256px;
+	height: 91px;
+	overflow: hidden;
 	border-bottom: 2px solid #ff7340;
+}
+
+.destacado_container img {
+	width: 100%;
 }
 
 .tit_destacado {
@@ -877,3 +886,637 @@ footer {
 	width: 140px;
 	height: 190px;
 }
+
+.credito_inicial {
+	float: left;
+}
+
+/* SLIDER CRABI.LA */
+
+/* Browser Resets
+*********************************/
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+
+/* Icon Fonts
+*********************************/
+/* Font-face Icons */
+@font-face {
+	font-family: 'flexslider-icon';
+	src:url('fonts/flexslider-icon.eot');
+	src:url('fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/flexslider-icon.woff') format('woff'),
+		url('fonts/flexslider-icon.ttf') format('truetype'),
+		url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {margin: 0; padding: 0; display: none;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "\0020"; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+.no-js .slides > li:first-child {display: block;}
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider { margin: 0; background: #fff; /*border: 4px solid #fff; */position: relative; /*-webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2); -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); -o-box-shadow: 0 1px 4px rgba(0,0,0,.2); box-shadow: 0 1px 4px rgba(0,0,0,.2); */ zoom: 1; }
+.flex-viewport { max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease; }
+.loading .flex-viewport { max-height: 300px; }
+.flexslider .slides { zoom: 1; }
+.carousel li { margin-right: 5px; }
+
+/* Direction Nav */
+/* Direction Nav */
+.flex-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block; background: url(../img/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
+.flex-direction-nav .flex-next {background-position: 100% 0; right: -36px; }
+.flex-direction-nav .flex-prev {left: -36px;}
+.flexslider:hover .flex-next {opacity: 0.8; right: 5px;}
+.flexslider:hover .flex-prev {opacity: 0.8; left: 5px;}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
+.flex-direction-nav .disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
+
+/* Pause/Play */
+.flex-pauseplay a { display: block; width: 20px; height: 20px; position: absolute; bottom: 5px; left: 10px; opacity: 0.8; z-index: 10; overflow: hidden; cursor: pointer; color: #000; }
+.flex-pauseplay a:before  { font-family: "flexslider-icon"; font-size: 20px; display: inline-block; content: '\f004'; }
+.flex-pauseplay a:hover  { opacity: 1; }
+.flex-pauseplay a.flex-play:before { content: '\f003'; }
+
+/* Control Nav */
+.flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
+.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -o-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); box-shadow: inset 0 0 3px rgba(0,0,0,0.3); }
+.flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
+.flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
+
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev { opacity: 1; left: 10px;}
+  .flex-direction-nav .flex-next { opacity: 1; right: 10px;}
+}
+
+/* SLIDER CRABI.LA FIN */
+
+/*@media only screen and (min-width: 320px) and (max-width: 360px) {}
+@media only screen and (min-width: 361px) and (max-width: 640px) {} */
+
+/* RESPONSIVE CRABI.LA */
+
+@media only screen and (max-width: 360px) { /* IPHONE VERTICAL */
+	
+	.contenedor_header {
+		width: 100%;
+	}
+
+	.contenedor_footer {
+		width: 100%;
+	}
+
+	.logo_crabi {
+		width: 100%;
+	}
+
+	.navegacion_header {
+		display: none;
+	}
+
+	.buscador_crabi_header {
+		display: none;
+	}
+
+	.creditos_crabi {
+		width: 60%;
+	}
+
+	.credito_inicial {
+		float: left;
+		width: 100%;
+	}
+
+	.creditos_crabi h3 {
+		width: 100%;
+		padding: 0;
+		line-height: 17px;
+		padding: 18px 0 0 10px;
+	}
+
+	.logo_footer {
+		padding: 16px 0 0 15px;
+	}
+
+	.subir_top {
+		margin: 16px 15px 0 0;
+	}
+
+	/* CONTENIDO*/
+	.contenedor_centro_f {
+		display: block;
+	}
+
+	.contendor_notas_principales {
+		display: none;
+	}
+
+	.centro_izq {
+		display: none;
+	}
+
+	.contenedor_centro {
+		width: 100%;
+	}
+
+	.centro_der {
+		width: 94%;
+		padding: 10px;
+	}
+
+	.contenedor_seccion_item {
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+
+	.contenedor_seccion_item h4 {
+		padding: 11px 0;
+	}
+
+	/*.contenedor_cajas_seccion {
+		padding: 20px 0 0 0;
+	}*/
+
+	.contenedor_cajas_seccion {
+		float: none;
+		width: 300px;
+		margin: 0 auto;
+	}
+
+	.titulo_seccion_f {
+		margin-bottom: 20px;
+	}
+
+	.borde_seccion_nacional {
+		border: 0;
+	}
+
+	.borde_seccion_internacional {
+		border: 0;
+	}
+
+	.borde_seccion_deportes {
+		border: 0;
+	}
+
+	.borde_seccion_farandula {
+		border: 0;
+	}
+
+	.contenedor_titulo_sec {
+		width: 100%;
+	}
+
+	.titulo_sec {
+		width: 100%;
+	}
+
+	.contenedor_cajas_seccion article:last-child {
+		display: none;
+	}
+
+	.contenedor_seccion {
+		margin-bottom: 5px;
+	}
+	
+	/* SLIDER */
+
+	.flexslider {
+		display: block;
+	}
+
+	.cont_tit_slider {
+		font-family: 'museo500';
+		font-size: 18px;
+		font-weight: normal;
+		color: #fff;
+		width: 9%;
+		background: url(../img/bg_destacdos.png);
+		position: absolute;
+		top:65%;
+		display: block;
+	}
+
+	.cont_tit_slider a {
+		float: left;
+		width: 72%;
+		color: #fff;
+		padding: 7px 3px 0 9px;
+		font-size: 17px;
+	}
+
+	.slider_icon_social {
+		float: left;
+		width: 60px;
+	}
+}
+
+
+@media only screen and (min-width: 361px) and (max-width: 640px) { /* IPHONE HORIZONTAL */
+	.contenedor_header {
+		width: 100%;
+	}
+
+	.contenedor_footer {
+		width: 100%;
+	}
+
+	.logo_crabi {
+		width: 100%;
+	}
+
+	.navegacion_header {
+		display: none;
+	}
+
+	.buscador_crabi_header {
+		display: none;
+	}
+
+	.creditos_crabi {
+		width: 60%;
+	}
+
+	.credito_inicial {
+		float: left;
+		width: 100%;
+	}
+
+	.creditos_crabi h3 {
+		width: 100%;
+		padding: 0;
+		line-height: 17px;
+		padding: 18px 0 0 10px;
+	}
+
+	.logo_footer {
+		padding: 16px 0 0 15px;
+	}
+
+	.subir_top {
+		margin: 16px 15px 0 0;
+	}
+
+	/* CONTENIDO*/
+	.contenedor_centro_f {
+		display: block;
+	}
+
+	.contendor_notas_principales {
+		display: none;
+	}
+
+	.centro_izq {
+		display: none;
+	}
+
+	.contenedor_centro {
+		width: 100%;
+	}
+
+	.centro_der {
+		width: 96%;
+		padding: 10px;
+	}
+
+	.contenedor_seccion_item {
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+
+	.contenedor_seccion_item h4 {
+		padding: 11px 0;
+	}
+
+	.contenedor_cajas_seccion {
+		/*padding: 20px 0 0 0;*/
+		float: none;
+		width: 451px;
+		margin: 0 auto;
+	}
+
+	.titulo_seccion_f {
+		margin-bottom: 20px;
+	}
+
+	.borde_seccion_nacional {
+		border: 0;
+	}
+
+	.borde_seccion_internacional {
+		border: 0;
+	}
+
+	.borde_seccion_deportes {
+		border: 0;
+	}
+
+	.borde_seccion_farandula {
+		border: 0;
+	}
+
+	.contenedor_titulo_sec {
+		width: 100%;
+	}
+
+	.titulo_sec {
+		width: 100%;
+	}
+
+	.contenedor_cajas_seccion article:last-child {
+		display: none;
+	}
+
+	.contenedor_cajas_seccion article:nth-child(4) {
+		display: none;
+	}
+
+	.contenedor_seccion {
+		margin-bottom: 5px;
+	}
+	
+	/* SLIDER */
+
+	.flexslider {
+		display: block;
+	}
+
+	.cont_tit_slider {
+		font-family: 'museo500';
+		font-size: 18px;
+		font-weight: normal;
+		color: #fff;
+		width: 9%;
+		background: url(../img/bg_destacdos.png);
+		position: absolute;
+		top:65%;
+		display: block;
+	}
+
+	.cont_tit_slider a {
+		float: left;
+		width: 79%;
+		color: #fff;
+		padding: 7px 3px 0 9px;
+		font-size: 17px;
+	}
+
+	.slider_icon_social {
+		float: left;
+		width: 60px;
+	}
+}
+
+@media only screen and (min-width: 641px) and (max-width: 768px) { /* IPAD VERTICAL */
+
+	.contenedor_header {
+		width: 100%;
+	}
+
+	.contenedor_footer {
+		width: 100%;
+	}
+
+	.logo_crabi {
+		float: left;
+		width: 100%;
+		margin-right: 30px;
+	}
+
+	.navegacion_header {
+		display: none;
+	}
+
+	.buscador_crabi_header {
+		display: none;
+	}
+
+	.creditos_crabi {
+		width: 60%;
+	}
+
+	.credito_inicial {
+		float: left;
+		width: 100%;
+	}
+
+	.creditos_crabi h3 {
+		width: 100%;
+		padding: 0;
+		line-height: 17px;
+		padding: 18px 0 0 10px;
+	}
+
+	.logo_footer {
+		padding: 16px 0 0 15px;
+	}
+
+	.subir_top {
+		margin: 16px 15px 0 0;
+	}
+
+	/* CONTENIDO*/
+	.contenedor_centro_f {
+		display: block;
+	}
+
+	.contendor_notas_principales {
+		display: none;
+	}
+
+	.centro_izq {
+		display: none;
+	}
+
+	.contenedor_centro {
+		width: 100%;
+	}
+
+	.centro_der {
+		width: 96%;
+		padding: 10px;
+	}
+
+	.contenedor_seccion_item {
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+
+	.contenedor_seccion_item h4 {
+		padding: 11px 0;
+	}
+
+	.contenedor_cajas_seccion {
+		/*padding: 20px 0 0 0;*/
+		float: none;
+		width: 680px;
+		margin: 0 auto;
+	}
+
+	.titulo_seccion_f {
+		margin-bottom: 20px;
+	}
+
+	.borde_seccion_nacional {
+		border: 0;
+	}
+
+	.borde_seccion_internacional {
+		border: 0;
+	}
+
+	.borde_seccion_deportes {
+		border: 0;
+	}
+
+	.borde_seccion_farandula {
+		border: 0;
+	}
+
+	.contenedor_titulo_sec {
+		width: 100%;
+	}
+
+	.titulo_sec {
+		width: 100%;
+	}
+
+	.contenedor_cajas_seccion article:last-child {
+		display: none;
+	}
+
+
+	.contenedor_seccion {
+		margin-bottom: 5px;
+	}
+	
+	/* SLIDER */
+
+	.flexslider {
+		display: block;
+	}
+
+	.cont_tit_slider {
+		font-family: 'museo500';
+		font-size: 18px;
+		font-weight: normal;
+		color: #fff;
+		width: 9%;
+		background: url(../img/bg_destacdos.png);
+		position: absolute;
+		top:70%;
+		display: block;
+	}
+
+	.cont_tit_slider a {
+		float: left;
+		width: 76%;
+		color: #fff;
+		padding: 7px 3px 0 20px;
+		font-size: 31px;
+	}
+
+	.slider_icon_social {
+		float: left;
+		width: 91px;
+	}
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) { /* IPAD HORIZONTAL */
+	.centro_der {
+		width: 611px;
+	}
+
+	.contenedor_footer {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.contenedor_cajas_seccion article:nth-child(5) {
+		display: none;
+	}
+
+	.contenedor_seccion_item { 
+		margin-right: 12px;
+	}
+
+	.contendor_notas_principales {
+		width: 79%;
+	}
+
+	.destacado_secundarios_f {
+		width: 403px;
+	}
+
+	.destacado_secundarios {
+		width: 201px;
+		border-bottom: 5px solid #ff7340;
+	}
+
+	.tit_destacado_sec {
+		width: 17%;
+		margin: 118px 0 0 0;
+	}
+
+	.destacados_terciarios_f {
+		width: 400px;
+	}
+
+	.destacados_terciarios {
+		width: 199px;
+		height: 90px;
+		border-right: 1px solid #ff7340;
+	}
+
+	.tit_destacado_ter {
+		width: 188px;
+		margin: 50px 0 0 0;
+	}
+
+}
+
+
+/*@media only screen and (min-width: 481px) and (max-width: 539px) { 
+
+}
+
+@media only screen and (min-width: 540px) and (max-width: 639px) {
+
+}
+
+@media only screen and (min-width: 640px) and (max-width: 767px) { 
+
+}
+
+
+
+@media only screen and (min-width: 855px) and (max-width: 960px) { 
+
+} */
+
+
+

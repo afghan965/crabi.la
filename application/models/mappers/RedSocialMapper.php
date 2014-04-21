@@ -35,5 +35,22 @@ class RedSocialMapper
 		return $arrRedSocial;
 	}
 
+	public function getById($id)
+	{
+		$link = $this->_mysql->connect(); 
+
+		$sql = "SELECT * FROM red_social WHERE id=$id";
+		$res = mysql_query($sql) or die(mysql_error());
+
+		if(mysql_num_rows($res) == 0) {
+			return null;
+		} else {
+			$redSocial = new RedSocial();
+			$redSocial->setField('id', mysql_result($res, 0, "id"));
+			$redSocial->setField('nombre', mysql_result($res, 0, "nombre"));
+			return $redSocial;
+		}
+	}
+
 }
 ?>

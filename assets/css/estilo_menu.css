@@ -1,0 +1,670 @@
+/* MENU */
+
+#menu_izq_superior_movil {
+  display: none;
+}
+
+#boton_menu_izq_movil {
+  display: none;
+}
+
+
+@media only screen and (max-width: 360px) { 
+
+#content {
+  background: #FAFBE3;	
+}
+
+#menu_izq_superior_movil {
+  display: block;
+  width: 92%;
+  position: relative;
+  height: auto;
+  left: 0;
+/*  border-left: 4px solid #ff7340; */
+}
+
+#boton_menu_izq_movil {
+  display: block;
+  float: right;
+  /*padding: 28px 20px 0 0px;*/
+  padding: 0;
+
+}
+
+#boton_menu_activar {
+  float: right;
+  cursor: pointer;
+  /*padding: 28px 20px 24px 17px;*/
+  padding: 28px 20px 39px 35px;
+  z-index: 9999;
+  background: url(../img/abrir_menu.png) no-repeat center center;
+}
+
+#boton_menu_desactivar {
+  float: right;
+  cursor: pointer;
+  display: none;
+  padding: 28px 20px 39px 35px;
+  z-index: 9999;
+  background: url(../img/abrir_menu.png) no-repeat center center; 
+}
+
+.contenedor_menu_izq {
+	/*width: 265px;*/
+	position: fixed;
+}
+
+#contenido_menu_meguz {
+	float: left;
+  background: url(../img/f_rayas_bla.png);
+}
+
+#posicion_del_menu {
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:0; 
+	/*width: 323px;*/
+  background: url(../img/f_text.png) #2e3031;
+}
+
+.snap-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  z-index: 2;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+       -o-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.07);
+	-webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.07);
+	-moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.07);
+	-o-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.07);
+}
+
+.snap-drawers {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+}
+
+.snap-drawer {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: auto;
+  /*width: 265px;*/
+  width: 83%;
+  height: auto;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition: width 0.3s ease;
+     -moz-transition: width 0.3s ease;
+      -ms-transition: width 0.3s ease;
+       -o-transition: width 0.3s ease;
+          transition: width 0.3s ease;
+}
+
+.snap-drawer-left {
+  left: 0;
+  z-index: 1;
+}
+
+.snap-drawer-right {
+  right: 0;
+  z-index: 1;
+  border-left: 3px solid #ff7340;
+
+}
+
+.snapjs-left .snap-drawer-right,
+.snapjs-right .snap-drawer-left {
+  display: none;
+
+}
+
+.snapjs-expand-left .snap-drawer-left,
+.snapjs-expand-right .snap-drawer-right {
+  width: 100%;
+}
+
+/* MENU MOBILE CRA */
+
+.contenedor_menu_mobile {
+  float: left;
+  width: 99%;
+  padding: 0;
+}
+
+.img_nav_mobile {
+  float: left;
+  width: 50px;
+  border: 3px solid #41413f;
+}
+
+.img_nav_mobile img {
+  width: 100%;
+}
+
+.contenedor_menu_mobile li {
+  float: left;
+  padding: 10px 12px;
+  width: 96%;
+  border-bottom: 1px solid #41413f;
+  background: #2b2b29;
+}
+
+.contenedor_menu_mobile li a {
+  font-family: 'museo300';
+  font-size: 14px;
+  display: inline-block;
+  width: 63%;
+  padding: 5px 10px;
+  /*color: #a3a7a8;*/
+  color: #fff;
+}
+
+.contenedor_menu_mobile li.nac {
+  border-right: 5px solid #e14d43;
+}
+
+.contenedor_menu_mobile li.inter {
+  border-right: 5px solid #3dbfd9;
+}
+
+.contenedor_menu_mobile li.fara {
+  border-right: 5px solid #ff963a;
+}
+
+.navegacion_mobile_home {
+  float: left;
+  width: 100%;
+}
+.navegacion_mobile_home li {
+  font-family: 'museo300';
+  width: 100%;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.navegacion_mobile_home li a {
+  float: left;
+  width: 100%;
+  color: #fff;
+  line-height: 26px;
+  padding: 8px;
+}
+
+.bg_nacional {
+  background: #e14d43;
+}
+
+.bg_internacional {
+  background: #3dbfd9;
+}
+
+.bg_deportes {
+  background: #88c462;
+}
+
+.bg_farandula {
+  background: #ff963a;
+}
+
+
+}
+
+@media only screen and (min-width: 361px) and (max-width: 640px) { 
+ 
+#content {
+  background: #FAFBE3;  
+}
+
+#menu_izq_superior_movil {
+  display: block;
+  width: 95%;
+  position: relative;
+  height: auto;
+  left: 0;
+/*  border-left: 4px solid #ff7340; */
+}
+
+#boton_menu_izq_movil {
+  display: block;
+  float: right;
+  /*padding: 28px 20px 0 0px;*/
+  padding: 0;
+}
+
+#boton_menu_activar {
+  float: right;
+  cursor: pointer;
+  /*padding: 28px 20px 24px 17px;*/
+  padding: 28px 20px 39px 35px;
+  z-index: 9999;
+  background: url(../img/abrir_menu.png) no-repeat center center;
+}
+
+#boton_menu_desactivar {
+  float: right;
+  cursor: pointer;
+  display: none;
+  padding: 28px 20px 39px 35px;
+  z-index: 9999;
+  background: url(../img/abrir_menu.png) no-repeat center center; 
+}
+
+.contenedor_menu_izq {
+  /*width: 265px;*/
+  position: fixed;
+}
+
+#contenido_menu_meguz {
+  float: left;
+  background: url(../img/f_rayas_bla.png);
+}
+
+#posicion_del_menu {
+  position:absolute;
+  left:0px;
+  top:0px;
+  z-index:0; 
+  /*width: 323px;*/
+  background: url(../img/f_text.png) #2e3031;
+}
+
+.snap-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  z-index: 2;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+       -o-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.07);
+  -o-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.07);
+}
+
+.snap-drawers {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+}
+
+.snap-drawer {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: auto;
+  width: 265px;
+  height: auto;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition: width 0.3s ease;
+     -moz-transition: width 0.3s ease;
+      -ms-transition: width 0.3s ease;
+       -o-transition: width 0.3s ease;
+          transition: width 0.3s ease;
+}
+
+.snap-drawer-left {
+  left: 0;
+  z-index: 1;
+}
+
+.snap-drawer-right {
+  width: 83.3%;
+  right: 0;
+  z-index: 1;
+  border-left: 3px solid #ff7340;
+
+}
+
+.snapjs-left .snap-drawer-right,
+.snapjs-right .snap-drawer-left {
+  display: none;
+
+}
+
+.snapjs-expand-left .snap-drawer-left,
+.snapjs-expand-right .snap-drawer-right {
+  width: 100%;
+}
+
+/* MENU MOBILE CRA */
+
+.contenedor_menu_mobile {
+  float: left;
+  width: 100%;
+  padding: 0;
+}
+
+.img_nav_mobile {
+  float: left;
+  width: 50px;
+  border: 3px solid #41413f;
+}
+
+.img_nav_mobile img {
+  width: 100%;
+}
+
+.contenedor_menu_mobile li {
+  float: left;
+  padding: 10px 12px;
+  width: 96.5%;
+  border-bottom: 1px solid #41413f;
+  background: #2b2b29;
+}
+
+.contenedor_menu_mobile li a {
+  font-family: 'museo300';
+  font-size: 14px;
+  display: inline-block;
+  width: 78%;
+  padding: 5px 10px;
+  /*color: #a3a7a8;*/
+  color: #fff;
+}
+
+.contenedor_menu_mobile li.nac {
+  border-right: 5px solid #e14d43;
+}
+
+.contenedor_menu_mobile li.inter {
+  border-right: 5px solid #3dbfd9;
+}
+
+.contenedor_menu_mobile li.fara {
+  border-right: 5px solid #ff963a;
+}
+
+.navegacion_mobile_home {
+  float: left;
+  width: 100%;
+}
+.navegacion_mobile_home li {
+  font-family: 'museo300';
+  width: 100%;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.navegacion_mobile_home li a {
+  float: left;
+  width: 100%;
+  color: #fff;
+  line-height: 26px;
+  padding: 8px;
+}
+
+.bg_nacional {
+  background: #e14d43;
+}
+
+.bg_internacional {
+  background: #3dbfd9;
+}
+
+.bg_deportes {
+  background: #88c462;
+}
+
+.bg_farandula {
+  background: #ff963a;
+}
+
+}
+
+
+@media only screen and (min-width: 641px) and (max-width: 768px) { 
+
+#content {
+  background: #FAFBE3;  
+}
+
+#menu_izq_superior_movil {
+  display: block;
+  width: 98%;
+  position: relative;
+  height: auto;
+  left: 0;
+/*  border-left: 4px solid #ff7340; */
+}
+
+#boton_menu_izq_movil {
+  display: block;
+  float: right;
+  /*padding: 28px 20px 0 0px;*/
+  padding: 0;
+
+}
+
+#boton_menu_activar {
+  float: right;
+  cursor: pointer;
+  /*padding: 28px 20px 24px 17px;*/
+  padding: 28px 20px 39px 35px;
+  z-index: 9999;
+  background: url(../img/abrir_menu.png) no-repeat center center;
+}
+
+#boton_menu_desactivar {
+  float: right;
+  cursor: pointer;
+  display: none;
+  padding: 28px 20px 39px 35px;
+  z-index: 9999;
+  background: url(../img/abrir_menu.png) no-repeat center center; 
+}
+
+.contenedor_menu_izq {
+  /*width: 265px;*/
+  position: fixed;
+}
+
+#contenido_menu_meguz {
+  float: left;
+  width: 100%;
+  background: url(../img/f_rayas_bla.png);
+}
+
+#posicion_del_menu {
+  position:absolute;
+  left:0px;
+  top:0px;
+  z-index:0; 
+  /*width: 323px;*/
+  background: url(../img/f_text.png) #2e3031;
+}
+
+.snap-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  z-index: 2;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+       -o-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.07);
+  -o-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.07);
+}
+
+.snap-drawers {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+}
+
+.snap-drawer {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: auto;
+  /*width: 265px;*/
+  width: 83%;
+  height: auto;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition: width 0.3s ease;
+     -moz-transition: width 0.3s ease;
+      -ms-transition: width 0.3s ease;
+       -o-transition: width 0.3s ease;
+          transition: width 0.3s ease;
+}
+
+.snap-drawer-left {
+  left: 0;
+  z-index: 1;
+}
+
+.snap-drawer-right {
+  right: 0;
+  z-index: 1;
+  border-left: 3px solid #ff7340;
+
+}
+
+.snapjs-left .snap-drawer-right,
+.snapjs-right .snap-drawer-left {
+  display: none;
+
+}
+
+.snapjs-expand-left .snap-drawer-left,
+.snapjs-expand-right .snap-drawer-right {
+  width: 100%;
+}
+
+/* MENU MOBILE CRA */
+
+.contenedor_menu_mobile {
+  float: left;
+  width: 100%;
+  padding: 0;
+}
+
+.img_nav_mobile {
+  float: left;
+  width: 50px;
+  border: 3px solid #41413f;
+}
+
+.img_nav_mobile img {
+  width: 100%;
+}
+
+.contenedor_menu_mobile li {
+  float: left;
+  padding: 10px 12px;
+  width: 97%;
+  border-bottom: 1px solid #41413f;
+  background: #2b2b29;
+}
+
+.contenedor_menu_mobile li a {
+  font-family: 'museo300';
+  font-size: 14px;
+  display: inline-block;
+  width: 63%;
+  padding: 5px 10px;
+  /*color: #a3a7a8;*/
+  color: #fff;
+}
+
+.contenedor_menu_mobile li.nac {
+  border-right: 5px solid #e14d43;
+}
+
+.contenedor_menu_mobile li.inter {
+  border-right: 5px solid #3dbfd9;
+}
+
+.contenedor_menu_mobile li.fara {
+  border-right: 5px solid #ff963a;
+}
+
+.navegacion_mobile_home {
+  float: left;
+  width: 100%;
+}
+.navegacion_mobile_home li {
+  font-family: 'museo300';
+  width: 100%;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.navegacion_mobile_home li a {
+  float: left;
+  width: 100%;
+  color: #fff;
+  line-height: 26px;
+  padding: 8px;
+}
+
+.bg_nacional {
+  background: #e14d43;
+}
+
+.bg_internacional {
+  background: #3dbfd9;
+}
+
+.bg_deportes {
+  background: #88c462;
+}
+
+.bg_farandula {
+  background: #ff963a;
+}
+
+
+}

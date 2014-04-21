@@ -34,4 +34,18 @@ $(document).ready(function () {
 			}, 800);
 			return false;
 		});
+		
+		// SLIDER 
+		SyntaxHighlighter.all();
+
+		$('.flexslider').flexslider({
+		animation: "slide",
+		controlNav: false,
+
+		start: function(slider){
+		  // $('body').removeClass('loading');
+		}
+
+		});
+
 });

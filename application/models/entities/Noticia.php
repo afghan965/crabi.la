@@ -1,9 +1,9 @@
 <?php
-class RedSocial {
+class Noticia {
 
 	private $_fields = array(
 			"id" => NULL,
-			"id_categorua" => NULL,
+			"id_categoria" => NULL,
 			"id_estado" => NULL,
 			"id_red_social" => NULL,
 			"titulo" => NULL,
@@ -15,7 +15,9 @@ class RedSocial {
 			"fecha_publicacion" => NULL,
 			"destacado" => 0,
 			"seo_titulo" => NULL,
-			"seo_descripcion" => NULL
+			"seo_descripcion" => NULL,
+			"slug" => NULL,
+			"url" => NULL
 		);
 
 	function __construct($entity = null) {

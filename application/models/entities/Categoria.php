@@ -3,7 +3,8 @@ class Categoria {
 
 	private $_fields = array(
 			"id" => NULL,
-			"nombre" => NULL
+			"nombre" => NULL,
+			"slug" => NULL
 		);
 
 	function __construct($entity = null) {
