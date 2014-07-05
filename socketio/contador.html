@@ -1,0 +1,25 @@
+<title>
+Contador RealTime
+</title>
+<head>
+
+<script type="text/javascript" src="js/socket.io.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+</head>
+<body>
+  <h1>Bienvenidos al RealTime</h1>
+
+ <section id="user"></section>
+  <script>
+  $(function() {
+    //Nos conectamos al server, esto emite un mensaje de "connection"
+    var socket2 = io.connect("http://crabi.la:9090");
+    //Cuando el cliente reciba el numero de usuarios
+    socket2.on("user", function(num) {
+        $("#user").html(num);
+    });
+  });
+  </script>
+
+</body>
